@@ -137,7 +137,7 @@ new Sortable({
 
 #### Pointer
 
-The built-in Pointer sensor responds to [Pointer events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events). It listens for the `pointerdown` event on activator elements to begin a sorting operation.
+The `PointerSensor` responds to [Pointer events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events). It listens for the `pointerdown` event on activator elements to begin a sorting operation.
 
 It also sets [`touch-action`](https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action) to `none` on activator elements to prevent scrolling. If your draggable item is part of a scrollable list, you should use a [drag handle](#activators) so that the contents of the list can still be scrolled.
 
@@ -145,7 +145,7 @@ The Pointer sensor will detect if the pointer is close to the edge of any scroll
 
 #### Keyboard
 
-The built-in Keyboard sensor responds to [Keyboard events](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent). When one of the `Enter` or `Space` keys are pressed on the activator element, a sorting operation will begin. The `Arrow` keys can be used to move the item. Pressing the `Enter` or `Space` key again will drop the item in its new position.
+The `KeyboardSensor` responds to [Keyboard events](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent). When one of the `Enter` or `Space` keys are pressed on the activator element, a sorting operation will begin. The `Arrow` keys can be used to move the item. Pressing the `Enter` or `Space` key again will drop the item in its new position.
 
 The Keyboard sensor will scroll the active item's scrollable ancestors so that it remains as close to the center as possible.
 
@@ -158,8 +158,8 @@ The following accessibility attributes are set on the activator element (if they
 
 The default screen reader instructions used are:
 
-> To pick up a sortable item, press space or enter.
-> While dragging, use the arrow keys to move the item.
+> To pick up a sortable item, press space or enter.  
+> While dragging, use the arrow keys to move the item.  
 > Press space or enter again to drop the item in its new position, or press escape to cancel.
 
 You can customize the screen reader instructions by passing in the `instructions` option when instantiating the `KeyboardSensor`:
