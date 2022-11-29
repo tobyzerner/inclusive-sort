@@ -71,13 +71,13 @@ export class PointerSensor implements Sensor {
             if (e.clientX > rect.right - w) {
                 x = ((e.clientX - rect.right + w) / w) * scrollSpeed;
             } else if (e.clientX < rect.left + w) {
-                x = ((e.clientX - w) / w) * scrollSpeed;
+                x = ((e.clientX - rect.left - w) / w) * scrollSpeed;
             }
 
             if (e.clientY > rect.bottom - h) {
                 y = ((e.clientY - rect.bottom + h) / h) * scrollSpeed;
             } else if (e.clientY < rect.top + h) {
-                y = ((e.clientY - h) / h) * scrollSpeed;
+                y = ((e.clientY - rect.top - h) / h) * scrollSpeed;
             }
 
             if (x !== 0 || y !== 0) {
