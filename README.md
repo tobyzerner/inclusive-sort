@@ -25,6 +25,7 @@ npm install inclusive-sort --save
 
 <!-- TOC -->
 * [Containers](#containers)
+* [Animations](#animations)
 * [Filtering Items](#filtering-items)
 * [Activators](#activators)
 * [Sorting Strategies](#sorting-strategies)
@@ -205,7 +206,7 @@ A `Sortable` instance is an `EventTarget` which you can add event listeners to. 
 | `drop`       | Fired when the item is dropped into its new position.     | Yes         |
 | `dragend`    | Fired after the overlay has animated to its new position. | No          |
 
-All events contain an instance of [`SortableContext`]() in their `detail` which allows inspecting many properties of the current drag operation. Cancellable events can be cancelled by calling `e.preventDefault()`.
+All events contain an instance of [`SortableContext`](https://github.com/tobyzerner/inclusive-sort/blob/main/src/SortableContext.ts) in their `detail` which allows inspecting many properties of the current drag operation. Cancellable events can be cancelled by calling `e.preventDefault()`.
 
 A common example is to hide the active item while it is being dragged, and to style the overlay:
 
