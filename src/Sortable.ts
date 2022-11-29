@@ -265,6 +265,7 @@ export class Sortable extends TypedEventTarget {
             height: '1px',
             overflow: 'hidden',
             position: 'absolute',
+            top: 0,
             whiteSpace: 'nowrap',
             width: '1px',
         });
