@@ -1,6 +1,6 @@
 {
     "name": "inclusive-sort",
-    "version": "0.1.0-beta.1",
+    "version": "0.1.0-beta.2",
     "description": "Drag and drop sorting that just works – for everyone.",
     "module": "dist/inclusive-sort.js",
     "type": "module",
