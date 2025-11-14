@@ -2,6 +2,8 @@
 
 **Drag and drop sorting that just works – for everyone.**
 
+⚠️ The project is no longer maintained. Prefer [@dnd-kit](https://next.dndkit.com/overview), which is lightweight and much more capable.
+
 There's no better example of accessiblity being an afterthought than drag and drop interfaces. Some of the most popular options today are [totally](https://github.com/SortableJS/Sortable/issues/1176) [inaccessible](https://github.com/bevacqua/dragula/issues/538) to many people. We need to do better.
 
 Inclusive Sort takes inspiration from the wonderful [dnd kit](https://dndkit.com), but is focused on sortable lists and doesn't require React. Features include:
